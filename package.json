@@ -1,0 +1,19 @@
+{
+  "name": "reach-the-end-in-time",
+  "version": "1.0.0",
+  "description": "Ejercicio SITHEC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoVinagre/reach-the-end-in-time.git"
+  },
+  "author": "José Eduardo Vinagre de Dios (eduardovinagre@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoVinagre/reach-the-end-in-time/issues"
+  },
+  "homepage": "https://github.com/EduardoVinagre/reach-the-end-in-time#readme"
+}
