@@ -15,9 +15,9 @@ function moverIzquierda(renglon, columna, movimiento) {
     let string = input.strings[renglon];
     let character = string[columna];
     if (character === '.') {
-      if (columna < input.numStrings && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
+      if (columna < (input.numStrings - 1) && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
         return true;
-      } else if (renglon < input.numStrings && moverAbajo(renglon + 1, columna, movimiento + 1)) {
+      } else if (renglon < (input.numStrings - 1) && moverAbajo(renglon + 1, columna, movimiento + 1)) {
         return true;
       } else if (renglon > 0 && moverArriba(renglon - 1, columna, movimiento + 1)) {
         return true;
@@ -34,7 +34,7 @@ function moverDerecha(renglon, columna, movimiento) {
     let string = input.strings[renglon];
     let character = string[columna];
     if (character === '.') {
-      if (renglon < input.numStrings && moverAbajo(renglon + 1, columna, movimiento + 1)) {
+      if (renglon < (input.numStrings - 1) && moverAbajo(renglon + 1, columna, movimiento + 1)) {
         return true;
       } else if (columna > 0 && moverDerecha(renglon, columna - 1, movimiento + 1)) {
         return true;
@@ -53,9 +53,9 @@ function moverAbajo(renglon, columna, movimiento) {
     let string = input.strings[renglon];
     let character = string[columna];
     if (character === '.') {
-      if (columna < input.numStrings && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
+      if (columna < (input.numStrings - 1) && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
         return true;
-      } else if (renglon < input.numStrings && moverAbajo(renglon + 1, columna, movimiento + 1)) {
+      } else if (renglon < (input.numStrings -1 ) && moverAbajo(renglon + 1, columna, movimiento + 1)) {
         return true;
       } else if (columna > 0 && moverDerecha(renglon, columna - 1, movimiento + 1)) {
         return true;
@@ -72,7 +72,7 @@ function moverArriba(renglon, columna, movimiento) {
     let string = input.strings[renglon];
     let character = string[columna];
     if (character === '.') {
-      if (columna < input.numStrings && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
+      if (columna < (input.numStrings - 1) && moverIzquierda(renglon, columna + 1, movimiento + 1)) {
         return true;
       } else if (columna > 0 && moverDerecha(renglon, columna - 1, movimiento + 1)) {
         return true;
